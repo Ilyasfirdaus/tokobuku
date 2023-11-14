@@ -31,6 +31,9 @@ class Welcome extends CI_Controller {
 	}
 	public function beranda()
 	{
+		$cari = $this->input->post('cari');
+		$data['GetDataCariBuku'] = $this->MSudi->GetCariBuku($cari)->result();
+		
 		$data['content']='beranda';
 		$this->load->view('welcome_message', $data);
 	}
