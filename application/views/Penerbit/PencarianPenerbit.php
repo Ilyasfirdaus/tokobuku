@@ -33,7 +33,7 @@
         <div class="container">
             <div class="wrapper mt-4">
                 <form method="post" class="d-flex" action="<?php echo site_url('Welcome/pencarianpenerbit'); ?>">
-                    <input type="text" name="cari" placeholder="Judul Buku" class="form-control me-2">
+                    <input type="text" name="cari" placeholder="Penerbit" class="form-control me-2">
                     <button class="btn btn-outline-primary" type="submit">Search</button>
                     <a href="<?php echo site_url('Welcome/penerbit')?>" class="btn btn-primary mr-3">Back</a>
                 </form>
@@ -44,8 +44,8 @@
                             <th scope="col">ID</th>
                             <th scope="col">Nama</th>
                             <th scope="col">Alamat</th>
+                            <th scope="col">Kota</th>
                             <th scope="col">Telepon</th>
-                            <th scope="col">Tools</th>
                         </tr>
                     </thead>
                     <tbody>
